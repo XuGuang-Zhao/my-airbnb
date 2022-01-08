@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Test_upload_1",
+    "address": "Sydney",
+    "price": 340,
+    "thumbnail": [
+      "https://img0.baidu.com/it/u=1471321208,1132441333&fm=15&fmt=auto"
+    ],
+    "metadata": {
+      "propertyType": "House",
+      "numOfBathroom": 2,
+      "numOfBed": 3,
+      "amenties": [
+        "Wifi",
+        "Washing Machine"
+      ],
+      "beds": [
+        {
+          "bedNumber": 1,
+          "bedType": "King Single"
+        },
+        {
+          "bedNumber": 1,
+          "bedType": "Double"
+        },
+        {
+          "bedNumber": 1,
+          "bedType": "Queen"
+        }
+      ]
+    }
+  },
+
+  {
+    "title": "Test_upload_2",
+    "address": "Melbourne",
+    "price": 350,
+    "thumbnail": [
+      "https://img2.baidu.com/it/u=4088326028,1953902698&fm=26&fmt=auto"
+    ],
+    "metadata": {
+      "propertyType": "House",
+      "numOfBathroom": 2,
+      "numOfBed": 3,
+      "amenties": [
+        "Wifi",
+        "Washing Machine",
+        "TV"
+      ],
+      "beds": [
+        {
+          "bedNumber": 1,
+          "bedType": "Single"
+        },
+        {
+          "bedNumber": 1,
+          "bedType": "Double"
+        },
+        {
+          "bedNumber": 1,
+          "bedType": "King Single"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,23 @@
+
+.lisiting-edit-wrapper {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.listing-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.edit-label {
+    display: inline-block;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.edit-button {
+    float: right;
+    width: 15%;
+}

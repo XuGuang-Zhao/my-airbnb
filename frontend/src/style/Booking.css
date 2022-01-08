@@ -1,0 +1,80 @@
+.booking-wapper {
+  display: flex;
+}
+
+.booking-wapper-details {
+  margin-left: 50px;
+}
+
+.booking-form {
+  width: 350px;
+  border: 1px solid #c9d1d7;
+  border-radius: 12px;
+  padding: 38px;
+  margin-top: 25px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;  
+}
+
+.booking-form-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-form-title-price {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  margin-right: 4px;
+}
+
+.booking-form-title{
+  margin-bottom: 15px;
+}
+
+.booking-form-title-right {
+  text-align: center;
+}
+
+.booking-form-score {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+
+.booking-form-reviews {
+  opacity: 0.8;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.booking-form-title-right :hover {
+  cursor: pointer;
+}
+
+.image-wrapper {
+  width: 650px;
+}
+
+.thumbnail-img {
+  width: 650px;
+}
+
+@media screen and (max-width: 400px) {
+  .booking-wapper {
+    display: block;
+  }
+  .image-wrapper {
+    width: 250px;
+  }
+  .thumbnail-img {
+    width: 250px;
+  }
+  .booking-wapper-details {
+    margin-left: -30px;
+    margin-top: 20px;
+  }
+  .booking-form {
+    width: 300px;
+    padding: 10px;
+  }
+}

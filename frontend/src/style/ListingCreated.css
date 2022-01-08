@@ -1,0 +1,23 @@
+
+.listing-create-title {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.lisiting-create-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.create-button {
+    width: 150px;
+}
+
+@media screen and (max-width: 400px) {
+  .lisiting-create-wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+}
