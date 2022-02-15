@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Input, Button, message, Form } from 'antd';
 import { useHistory } from 'react-router-dom';
 
+/* 表单样式配置 */
 const formItemLayout = {
   labelCol: {
     xs: { span: 24 },
@@ -29,7 +30,7 @@ const Register = () => {
       password: password,
       name: name,
     }
-
+    /* 数据校验 */
     if (!password) {
       message.error('password cannot be blank');
       return;

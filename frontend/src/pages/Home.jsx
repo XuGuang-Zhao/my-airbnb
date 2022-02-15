@@ -86,6 +86,7 @@ const Home = () => {
 
   return (
     <Layout>
+      {/* 机票查询页 */}
       <div className='backgroundImg'>
         <div className='search-form'>
           <Form layout='inline' labelCol={{ span: 12 }} onFinish={onFinish}>
@@ -105,12 +106,14 @@ const Home = () => {
                 placeholder="Maximum"
               />
             </Form.Item>
-            <Button type="primary" htmlType="submit">
+            <Button type="primary" htmlType="submit" onClick={() => console.log('Hello')}>
+              {/* Icon */}
               <SearchOutlined />
             </Button>
           </Form>
         </div>
       </div>
+
       <Content style={{ padding: '0 50px' }}>
         <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
           <Content style={{ padding: '0 24px', minHeight: 280 }}>
