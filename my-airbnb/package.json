@@ -1,0 +1,28 @@
+{
+  "name": "my-airbnb",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "bcryptjs": "^3.0.3",
+    "element-plus": "^2.14.3",
+    "jose": "^6.2.6",
+    "nuxt": "^4.5.0",
+    "pinia": "^4.0.2",
+    "prisma": "^6.19.3",
+    "vue": "^3.5.40",
+    "vue-router": "^5.2.0"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.1.5",
+    "@types/bcryptjs": "^3.0.0",
+    "@types/jsonwebtoken": "^9.0.10"
+  }
+}

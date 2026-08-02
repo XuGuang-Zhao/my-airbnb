@@ -4,7 +4,5 @@ import './style/index.css';
 import 'antd/dist/antd.css';
 import AppRouter from './router.js';
 
-ReactDOM.render(
-  <AppRouter/>,
-  document.getElementById('root'),
-);
+// eslint-disable-next-line react/no-deprecated
+ReactDOM.render(<AppRouter />, document.getElementById('root'));
