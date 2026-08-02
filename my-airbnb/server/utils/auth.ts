@@ -3,40 +3,39 @@ import { SignJWT, jwtVerify } from "jose";
 import { randomUUID } from "crypto";
 
 // 密码加密
-export const hashPassword = (rawPassword: string) => {
+export function hashPassword(rawPassword: string) {
   return bcrypt.hashSync(rawPassword, 10);
-};
+}
 
-// 密码对比
-export const comparePassword = (raw: string, hashStr: string) => {
+// 密码校验
+export function comparePassword(raw: string, hashStr: string) {
   return bcrypt.compareSync(raw, hashStr);
-};
+}
 
-// 创建JWT
+// 生成JWT
 export async function createToken(userId: number, sessionKey: string) {
   const config = useRuntimeConfig();
-  const secret = new TextEncoder().encode(config.JWT_SECRET);
-
-  const jwt = await new SignJWT({
-    sub: userId,
-    sessionKey,
-  })
+  const secret = new TextEncoder().encode(config.JWT_SECRET as string);
+  const token = await new SignJWT({ sub: String(userId), sessionKey })
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
-    .setExpirationTime(config.JWT_EXPIRE)
+    .setExpirationTime(config.JWT_EXPIRE as string)
     .sign(secret);
-  return jwt;
+  return token;
 }
 
-// 校验JWT
+// 解析校验JWT
 export async function verifyToken(token: string) {
   const config = useRuntimeConfig();
-  const secret = new TextEncoder().encode(config.JWT_SECRET);
+  const secret = new TextEncoder().encode(config.JWT_SECRET as string);
   const { payload } = await jwtVerify(token, secret);
-  return payload as { sub: number; sessionKey: string };
+  return {
+    sub: Number(payload.sub),
+    sessionKey: payload.sessionKey as string,
+  };
 }
 
-// 生成会话唯一标识
+// 生成会话标识
 export function genSessionKey() {
   return randomUUID();
 }

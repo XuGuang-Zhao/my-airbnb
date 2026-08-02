@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     public: {
       apiBase: "/api",
     },
-    jwtSecret: process.env.JWT_SECRET,
-    jwtExpiresIn: "1h",
+    JWT_SECRET: process.env.JWT_SECRET,
+    JWT_EXPIRE: process.env.JWT_EXPIRE,
+    SESSION_MAX_DAYS: process.env.SESSION_MAX_DAYS,
   },
 });
